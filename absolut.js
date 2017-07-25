@@ -7,7 +7,12 @@
 	$(".drinksTable").html("");
 
 	var cocktail = $("#cocktail-input").val().trim();
-
+	var data = $("#cocktail-input").val().trim();
+	
+	if (!$.trim(data)){   
+    	$('.drinksTable').html("Must Choose a Cocktail!!!")
+	} else{   
+    
 	$("#cocktail-input").val('');
 
 	console.log(cocktail)
@@ -44,7 +49,7 @@
 			$('.drinksTable').append(Row);
 		})
       });
-    });
+    }});
 
     // Random //
 
