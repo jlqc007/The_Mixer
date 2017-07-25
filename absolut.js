@@ -11,7 +11,7 @@
 	$("#cocktail-input").val('');
 
 	console.log(cocktail)
-	var queryURL = "http://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + cocktail;
+	var queryURL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + cocktail;
 	console.log(queryURL)
 	$.ajax({
 		url: queryURL,
@@ -52,7 +52,7 @@
 
     $(".drinksTable").html("");
 
-	var queryURL = "http://www.thecocktaildb.com/api/json/v1/1/random.php";
+	var queryURL = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 	console.log(queryURL)
 	$.ajax({
 		url: queryURL,
